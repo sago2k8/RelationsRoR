@@ -6,6 +6,7 @@ class PersonalInfosController < ApplicationController
   def index
     @people = Person.all
     @personal_infos = PersonalInfo.all
+    
 
   end
 

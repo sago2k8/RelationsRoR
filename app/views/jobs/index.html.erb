@@ -19,6 +19,10 @@
         <td><%= job.title %></td>
         <td><%= job.company %></td>
         <td><%= job.position_id %></td>
+        <%= person_id = job.person_id %>
+        <% persona = @people.find(person_id) %>
+        <td> <%=persona.first_name%>   </td>
+
         <td><%= job.person %></td>
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>

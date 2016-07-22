@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :salary_ranges
+  resources :hobbies
   resources :jobs
   resources :personal_infos
   resources :people
